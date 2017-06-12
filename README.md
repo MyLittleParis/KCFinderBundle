@@ -4,7 +4,7 @@ http://kcfinder.sunhater.com
 
 Install :
 composer
-"jocelynkerbourch/kc-finder-bundle": "dev-master"
+"mylittleparis/kc-finder-bundle": "^1.0"
 php composer.phar install 
 
 appkernel
