@@ -17,7 +17,11 @@
 // See http://kcfinder.sunhater.com/install for setting descriptions
 
 $base =  __DIR__ . '/../../../../../../';
-require_once $base.'app/autoload.php';
+if (file_exists($base.'app/autoload.php')) {
+    require_once $base.'app/autoload.php';
+} else {
+    require_once $base.'vendor/autoload.php';
+}
 use Symfony\Component\Yaml\Parser;
 
 $yaml = new Parser();
